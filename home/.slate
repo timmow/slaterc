@@ -56,3 +56,8 @@ bind pad6:cmd;alt push right bar-resize:screenSizeX/2
 bind pad7:cmd;alt corner top-left resize:screenSizeX/2;screenSizeY/2
 bind pad8:cmd;alt push top bar-resize:screenSizeY/2
 bind pad9:cmd;alt corner top-right resize:screenSizeX/2;screenSizeY/2
+
+layout dev 'iTerm' corner bottom-left resize:screenSizeX/2;screenSizeY/2
+layout dev 'Google Chrome' corner top-left resize:screenSizeX/2;screenSizeY/2
+layout dev 'MacVim' push right bar-resize:screenSizeX/2
+bind d:alt;ctrl layout dev
