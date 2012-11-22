@@ -61,3 +61,8 @@ layout dev 'iTerm' corner bottom-left resize:screenSizeX/2;screenSizeY/2
 layout dev 'Google Chrome' corner top-left resize:screenSizeX/2;screenSizeY/2
 layout dev 'MacVim' push right bar-resize:screenSizeX/2
 bind d:alt;ctrl layout dev
+
+layout notification 'Colloquy' push left bar-resize:screenSizeX/2 0
+layout notification 'Spotify' push right bar-resize:screenSizeX/2 0
+bind s:alt;ctrl layout notification
+
