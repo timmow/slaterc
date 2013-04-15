@@ -73,3 +73,4 @@ layout notification 'Colloquy' push left bar-resize:screenSizeX/2 0
 layout notification 'Spotify' push right bar-resize:screenSizeX/2 0
 bind s:alt;ctrl layout notification
 
+bind l:alt hint QWERTYUIOP
