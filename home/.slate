@@ -52,6 +52,7 @@ bind pad1:cmd;alt corner bottom-left resize:screenSizeX/2;screenSizeY/2
 bind pad2:cmd;alt push down bar-resize:screenSizeY/2
 bind pad3:cmd;alt corner bottom-right resize:screenSizeX/2;screenSizeY/2
 bind pad4:cmd;alt push left bar-resize:screenSizeX/2
+bind pad5:cmd;alt move 0;0 screenSizeX;screenSizeY
 bind pad6:cmd;alt push right bar-resize:screenSizeX/2
 bind pad7:cmd;alt corner top-left resize:screenSizeX/2;screenSizeY/2
 bind pad8:cmd;alt push top bar-resize:screenSizeY/2
@@ -69,8 +70,13 @@ layout angulardev 'Google Chrome':IGNORE_FAIL  ${tlc} | ${blc}
 layout angulardev 'MacVim' corner top-right resize:screenSizeX/2;screenSizeY/2
 bind g:alt;ctrl layout angulardev
 
-layout notification 'Colloquy' push left bar-resize:screenSizeX/2 0
-layout notification 'Spotify' push right bar-resize:screenSizeX/2 0
+layout notification 'LimeChat' push left bar-resize:screenSizeX/2 1
+layout notification 'Spotify' push right bar-resize:screenSizeX/2 1
 bind s:alt;ctrl layout notification
 
 bind l:alt hint QWERTYUIOP
+
+layout devalt 'iTerm' push bottom bar-resize:screenSizeY/3
+layout devalt 'Google Chrome' corner top-left resize:screenSizeX/2;2*screenSizeY/3
+layout devalt 'MacVim' corner top-right resize:screenSizeX/2;2*screenSizeY/3
+bind f:alt;ctrl layout devalt
