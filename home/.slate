@@ -17,10 +17,10 @@ bind e:${hyper} corner top-right resize:screenSizeX/2;screenSizeY/2
 
 
 # Resize Bindings
-bind right:alt       resize +10% +0
-bind left:alt        resize -10% +0
-bind up:alt          resize +0   -10%
-bind down:alt        resize +0   +10%
+bind right:${hyper}       resize +10% +0
+bind left:${hyper}        resize -10% +0
+bind up:${hyper}          resize +0   -10%
+bind down:${hyper}        resize +0   +10%
 bind right:ctrl;alt  resize -10% +0 bottom-right
 bind left:ctrl;alt   resize +10% +0 bottom-right
 bind up:ctrl;alt     resize +0   +10% bottom-right
@@ -76,7 +76,12 @@ layout notification 'LimeChat' push left bar-resize:screenSizeX/2 1
 layout notification 'Spotify' push right bar-resize:screenSizeX/2 1
 bind s:alt;ctrl layout notification
 
-bind l:alt hint QWERTYUIOP
+layout fullScreen 'iTerm' move 0;0 screenSizeX;screenSizeY+60 0
+layout fullScreen 'MacVim' move 0;0 screenSizeX;screenSizeY+60 0
+layout fullScreen 'Slack' throw 1
+bind l:${hyper} hint QWERTYUIOP
+
+default fullScreen count:2
 
 layout devalt 'iTerm' push bottom bar-resize:screenSizeY/3
 layout devalt 'Google Chrome' corner top-left resize:screenSizeX/2;2*screenSizeY/3
